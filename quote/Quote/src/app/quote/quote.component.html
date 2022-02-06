@@ -1,15 +1,18 @@
-<div>
+<div class="container">
     <h2>quotes place</h2>
-    
+    <div class="row">
+      <div class="col-md-6">
         <ul>
             <li class="list" *ngFor='let quote of quotes; let i=index'>
               {{quote.genre}}
-          
+          <div>
               <button class="btn" (click)='toggleDetails(i)'>VIEW QUOTE</button>
-            
+            </div>
               <app-quote-details *ngIf='quote.showQuote' [quote]="quote" (isComplete)="quoteComplete($event,i)" ></app-quote-details>
             </li>
           </ul>
 
- </div>
+      </div>
+</div>
+</div>
 
