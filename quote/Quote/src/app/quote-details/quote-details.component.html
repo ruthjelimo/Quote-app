@@ -1,13 +1,14 @@
-<!-- <p>
-    {{quote?.description}}
-    
-  </p> -->
+
   <p>
     {{quote?.id}}<br>
     {{quote?.authorName}}<br>
     {{quote?.description}}<br>
-    <!-- {{quote?.publishDate}} -->
-    published on {{quote?.publishDate|date}}
-   
+    published on {{quote?.publishDate|date}}<br>
+    <!-- Like :<br>
+    {{numberOfLikes}}
+    <button>Like</button>
+    <button>Dislike</button>
+    -->
   </p>
+  
   <button (click)= 'quoteComplete(true)' >Delete quote</button>
