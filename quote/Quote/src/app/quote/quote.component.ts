@@ -20,13 +20,14 @@ export class QuoteComponent implements OnInit {
   }
  
 
-  completeQuote(isComplete:any, index:any){
-    if (isComplete) {
-      this.quotes.splice(index,1);
-    }
+
+quoteComplete(isComplete:any, index:any){
+  if (isComplete) {
+    this.quotes.splice(index,1);
   }
+}
+
   constructor() { } 
   ngOnInit(): void {
   }
-
 }

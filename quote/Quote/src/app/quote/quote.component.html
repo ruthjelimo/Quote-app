@@ -7,9 +7,7 @@
           
               <button class="btn" (click)='toggleDetails(i)'>VIEW QUOTE</button>
             
-              <app-quote-details *ngIf='quote.showQuote' [quote]="quote" (isComplete)="completeQuote($event,i)" ></app-quote-details>
-              <!-- <app-quote-details *ngIf='quote.showQuote' [quote]='quote'></app-quote-details> -->
-             
+              <app-quote-details *ngIf='quote.showQuote' [quote]="quote" (isComplete)="quoteComplete($event,i)" ></app-quote-details>
             </li>
           </ul>
 
