@@ -18,13 +18,17 @@ export class QuoteComponent implements OnInit {
   toggleDetails(index:any){
     this.quotes[index].showQuote = !this.quotes[index].showQuote;
   }
- 
-
-
 quoteComplete(isComplete:any, index:any){
   if (isComplete) {
     this.quotes.splice(index,1);
   }
+}
+
+addNewQuote(quote:any){
+  let goalLength = this.quotes.length;
+  quote.id = quote.Length+1;
+  quote.completeDate = new Date(quote.completeDate)
+  this.quotes.push(quote)
 }
 
   constructor() { } 
