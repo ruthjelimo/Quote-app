@@ -5,6 +5,7 @@ import { Quote } from './../quote'
   templateUrl: './quote-details.component.html',
   styleUrls: ['./quote-details.component.css']
 })
+
 export class QuoteDetailsComponent implements OnInit {
 // @Input()Quote:quote;
 @Input() quote:Quote | undefined;
@@ -14,9 +15,22 @@ export class QuoteDetailsComponent implements OnInit {
 quoteComplete(complete:boolean){
   this.isComplete.emit(complete);
 }
+// export class LikeComponent {
+  numberOfLikes: number= 0;
+  likeButtonClick(){
+   this.numberOfLikes ++;
+
+  }
+  numberOfDislikes: number= 0;
+  dislikeButtonClick(){
+   this.numberOfLikes--;
+  }
+  
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
 
 }

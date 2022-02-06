@@ -4,11 +4,16 @@
     {{quote?.authorName}}<br>
     {{quote?.description}}<br>
     published on {{quote?.publishDate|date}}<br>
-    <!-- Like :<br>
-    {{numberOfLikes}}
-    <button>Like</button>
-    <button>Dislike</button>
-    -->
-  </p>
   
+  </p>
+  <!-- <like-box></like-box> -->
+  <div>
+    <h2>Number of likes:</h2>
+    <p>
+        {{numberOfLikes}}
+    </p>
+    <button class= "btn btn-success"(click)="likeButtonClick()">Like</button>
+    <button class="btn btn-danger"(click)="dislikeButtonClick()">Dislike</button>
+    </div>
   <button (click)= 'quoteComplete(true)' >Delete quote</button>
+  
