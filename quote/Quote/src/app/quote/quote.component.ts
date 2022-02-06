@@ -25,9 +25,9 @@ quoteComplete(isComplete:any, index:any){
 }
 
 addNewQuote(quote:any){
-  let goalLength = this.quotes.length;
+  let quoteLength = this.quotes.length;
   quote.id = quote.Length+1;
-  quote.completeDate = new Date(quote.completeDate)
+  quote.publishDate = new Date(quote.completeDate)
   this.quotes.push(quote)
 }
 
