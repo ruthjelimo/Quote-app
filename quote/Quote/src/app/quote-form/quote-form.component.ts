@@ -14,6 +14,9 @@ export class QuoteFormComponent implements OnInit {
   submitQuote(){
 this.addQuote.emit(this.newQuote);
   }
+  // showQuote(showQuote: any) {
+  //   throw new Error('Method not implemented.');
+  // }
   constructor() { }
 
   ngOnInit(): void {
