@@ -10,10 +10,10 @@ export class QuoteComponent implements OnInit {
 
 
   quotes:Quote[]=[
-  new Quote(1,'Albert Schwetwezer','Example is leadership','love',new Date(2020,9,20)),
-  new Quote(2,'Tim tebow','Dont be normal,be an example','war',new Date(2022,1,4)),
-  new Quote (3,'Ruth jelimo','Action is the foundational key to all success','educational',new Date(2022,2,6)),
-  new Quote(4,'Lee Lacocca','If you set a good example you need not to worry about setting rules','love',new Date(2012,8,4)),
+  new Quote(1,'Albert Schwetwezer','Example is leadership','LOVE ',new Date(2020,9,20)),
+  new Quote(2,'Tim tebow','Dont be normal,be an example','POETRY',new Date(2022,1,4)),
+  new Quote (3,'Ruth jelimo','Action is the foundational key to all success','EDUCATIONAL',new Date(2022,2,6)),
+  new Quote(4,'Lee Lacocca','If you set a good example you need not to worry about setting rules','LEADERSHIP',new Date(2012,8,4)),
   ];
   toggleDetails(index:any){
     this.quotes[index].showQuote = !this.quotes[index].showQuote;

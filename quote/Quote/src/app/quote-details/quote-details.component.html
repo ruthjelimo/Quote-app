@@ -1,12 +1,16 @@
 
-  <p>
-    {{quote?.id}}<br>
-    {{quote?.authorName}}<br>
-    {{quote?.description}}<br>
-    published on {{quote?.publishDate|date}}<br>
-  
-  </p>
-  <!-- <like-box></like-box> -->
+<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+  <div class="card-header">Quote</div>
+  <div class="card-body">
+    <h5 class="card-title"></h5>
+    <p class="card-text">
+      By: {{quote?.authorName}}<br>
+      Quote:{{quote?.description}}<br>
+      published on {{quote?.publishDate|date}}<br>
+    
+    </p>
+  </div>
+</div>
   <div>
     <h2>Number of likes:</h2>
     <p>
