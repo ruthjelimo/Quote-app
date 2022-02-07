@@ -1,6 +1,6 @@
 
 ## Application 
-Quote-APP
+Quote-App
 # Author
 
 By:Ruth jelimo
