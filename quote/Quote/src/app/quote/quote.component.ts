@@ -23,14 +23,9 @@ quoteComplete(isComplete:any, index:any){
     this.quotes.splice(index,1);
   }
 }
-
-addNewQuote(quote:any){
-  let quoteLength = this.quotes.length;
-  quote.id = quote.Length;
-  quote.publishDate = new Date(quote.publishDate)
-  this.quotes.push(quote)
-}
-
+addNewQuote(newQuote:Quote){
+  this.quotes.push(newQuote);
+ }
   constructor() { } 
   ngOnInit(): void {
   }

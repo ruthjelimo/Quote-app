@@ -6,18 +6,19 @@
     <p class="card-text">
       By: {{quote?.authorName}}<br>
       Quote:{{quote?.description}}<br>
-      published on {{quote?.publishDate|date}}<br>
-    
+      published {{quote?.publishDate|date|dateCount}} days ago<br>
+      
     </p>
   </div>
 </div>
   <div>
     <h2>Number of likes:</h2>
-    <p>
-        {{numberOfLikes}}
-    </p>
+   
     <button class= "btn btn-success"(click)="likeButtonClick()">Like</button>
+    {{numberOfLikes}}
+   
     <button class="btn btn-danger"(click)="dislikeButtonClick()">Dislike</button>
-    </div>
+    {{numberOfDislikes}}
+  </div>
   <button (click)= 'quoteComplete(true)' >Delete quote</button>
   
