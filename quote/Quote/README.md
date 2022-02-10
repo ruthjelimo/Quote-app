@@ -1,6 +1,6 @@
 
 ## Application 
-Quote-APP
+Quote-App
 # Author
 
 By:Ruth jelimo
@@ -49,7 +49,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Livelink
 To clone the project use the link below https://github.com/ruthjelimo/Quote-app.git
 
-To view the project here is my live link to the project 
+To view the project here is my live link to the https://ruthjelimo.github.io/quote-app/
 
 
 ## License
