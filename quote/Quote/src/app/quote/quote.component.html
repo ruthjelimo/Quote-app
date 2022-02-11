@@ -7,21 +7,16 @@
               {{quote.genre}}
           <div>
               <button class="btn" (click)='toggleDetails(i)'>VIEW QUOTE</button>
-            </div>
-              <app-quote-details *ngIf='quote.showQuote' [quote]="quote" (isComplete)="quoteComplete($event,i)" ></app-quote-details>
+            
+              <app-quote-details *ngIf='quote.showQuote' [quote]="quote" (isComplete)="quoteComplete($event,i)" ></app-quote-details> 
+           
+          </div>
             </li>
           </ul>
-
+ 
+          <div class="add">
+            <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+      
+          </div>
       </div>
-      <div class="col-md-6">
-        <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
-      </div>
-</div>
-
-
-
-</div>
-
-
-
-
+    

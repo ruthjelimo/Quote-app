@@ -4,12 +4,14 @@
   <div class="card-body">
     <h5 class="card-title"></h5>
     <p class="card-text">
-      By: {{quote?.authorName}}<br>
+      Author: {{quote?.authorName}}<br>
+      Published By:{{quote?.nameOfPublisher}}<br>
       Quote:{{quote?.description}}<br>
-      published {{quote?.publishDate|date|dateCount}} days ago<br>
+       {{quote?.publishDate|dateCount}} <br>
       
     </p>
   </div>
+  
 </div>
   <div>
     <h2>Number of likes:</h2>
